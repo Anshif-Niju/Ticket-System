@@ -6,25 +6,27 @@ import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import api from "./services/axios";
-import { setUser } from "./features/auth/authSlice";
+import { setLoading, setUser } from "./features/auth/authSlice";
+import ProtectedRoute from "./guard/ProtectedRoute";
 
 function App() {
-
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const fetchUser = async () => {
+    const checkAuth = async () => {
+      dispatch(setLoading(true));
+
       try {
         const { data } = await api.get("/auth/me");
 
         dispatch(setUser(data.user));
-      } catch (error) {
-        console.log("Not Logged In");
+      } catch {
+        dispatch(setUser(null));
       }
     };
 
-    fetchUser();
-  }, []);
+    checkAuth();
+  }, [dispatch]);
 
   return (
     <Routes>
@@ -47,6 +49,8 @@ const dispatch = useDispatch();
           </ProtectedRoute>
         }
       />
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
