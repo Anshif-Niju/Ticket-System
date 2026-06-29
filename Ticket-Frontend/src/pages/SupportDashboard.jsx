@@ -37,10 +37,6 @@ const SupportDashboard = () => {
           <h1 className="mt-3 text-3xl font-semibold sm:text-5xl">
             Work the tickets assigned to you and keep statuses up to date.
           </h1>
-          <p className="mt-4 max-w-2xl text-sm leading-7 text-emerald-50/85 sm:text-base">
-            Support agents only see their own tickets here. Update status from
-            this page and the admin dashboard will pick up the change.
-          </p>
         </section>
 
         <section className="grid gap-4 sm:grid-cols-3">
@@ -69,9 +65,6 @@ const SupportDashboard = () => {
             <h2 className="text-2xl font-semibold text-slate-900">
               My Tickets
             </h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Update only the status of tickets assigned to you.
-            </p>
           </div>
 
           {error ? (

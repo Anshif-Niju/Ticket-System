@@ -65,7 +65,7 @@ const Login = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center px-4 py-10 sm:px-6">
-      <div className="grid w-full max-w-2xl overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 shadow-[0_30px_90px_rgba(15,23,42,0.12)] backdrop-blur lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="grid w-full max-w-3xl overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 shadow-[0_30px_90px_rgba(15,23,42,0.12)] backdrop-blur lg:grid-cols-[1.15fr_0.85fr]">
 
         <section className="px-6 py-10 sm:px-10 lg:px-12">
           <div className="mx-auto max-w-md">
@@ -76,7 +76,14 @@ const Login = () => {
               Sign in to your account
             </h2>
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              Use your seeded admin or support credentials to enter the dashboard.
+           <h2 className="mt-2 text-2xl font-semibold text-slate-900">
+             For testing purpose onlyyyy
+            </h2>
+
+             Admin email : admin@gmail.com<br></br>
+             Admin password : admin123<br></br>
+             supporter email : support@gmail.com<br></br>
+             supporter password : support123
             </p>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-5">

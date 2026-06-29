@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-teal-700">
-            Help Desk System
+            Ticket System
           </p>
           <h2 className="mt-1 text-lg font-semibold text-slate-900 sm:text-xl">
             {user?.role === "admin" ? "Admin Workspace" : "Support Workspace"}

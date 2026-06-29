@@ -66,10 +66,6 @@ const AdminDashboard = () => {
             <h1 className="mt-3 text-3xl font-semibold sm:text-5xl">
               Manage tickets, assign support, and track every update live.
             </h1>
-            <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
-              The ticket list auto-refreshes every few seconds, so status changes
-              from support agents show up here without needing a manual refresh.
-            </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
@@ -99,9 +95,6 @@ const AdminDashboard = () => {
             <h2 className="text-2xl font-semibold text-slate-900">
               Create Ticket
             </h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Add a new support request and assign it afterward.
-            </p>
           </div>
           <TicketForm onTicketCreated={fetchTickets} />
         </section>
@@ -112,9 +105,6 @@ const AdminDashboard = () => {
               <h2 className="text-2xl font-semibold text-slate-900">
                 All Tickets
               </h2>
-              <p className="mt-1 text-sm text-slate-600">
-                Review tickets, assign support agents, and monitor status changes.
-              </p>
             </div>
           </div>
 

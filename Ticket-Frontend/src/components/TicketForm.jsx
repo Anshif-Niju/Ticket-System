@@ -63,7 +63,7 @@ const TicketForm = ({ onTicketCreated }) => {
           <input
             type="text"
             name="title"
-            placeholder="Printer issue in finance room"
+            placeholder="Isuue Title"
             value={ticket.title}
             onChange={handleChange}
             className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-teal-500 focus:bg-white"
@@ -87,7 +87,7 @@ const TicketForm = ({ onTicketCreated }) => {
           <input
             type="text"
             name="category"
-            placeholder="Hardware"
+            placeholder="Cateogry"
             value={ticket.category}
             onChange={handleChange}
             className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-teal-500 focus:bg-white"
